@@ -10,11 +10,18 @@ class Mine:
 
     def upgrade(self, muiltiplyer):
         self.production *= muiltiplyer
+        print(self.name + " has been upgraded.")
+
+class Corporation:
+    pass
+
     
 testMine = Mine("Gold Mine")
 
 print(testMine.name)
 print(testMine.produce(1))
+testMine.upgrade(5)
+
 print(testMine.produce(1))
 
 
